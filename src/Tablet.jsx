@@ -1,6 +1,7 @@
 /** Button that attempts to use the token in context when clicked */
 export default function Tablet() {
-  // TODO: call authenticate when form is submitted
+import { useAuth } from "./AuthContext";
+  const { authenticate } = useAuth();
 
   return (
     <section>
